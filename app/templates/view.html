@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Detalhes da Empresa{% endblock  %}
+
+{% block content %}
+<body>
+  <div class="col-8 m-auto pt-5 pd-2 text-center">
+    <strong>CNPJ: </strong> {{db.cnpj}}<br>
+    <strong>Nome da Loja Parceira: </strong> {{db.store_name}}<br>
+    <strong>Categoria do Produto: </strong> {{db.product_category}}<br>
+    <strong>Produto: </strong> {{db.product}}
+  </div>
+ </body>
+
+{% endblock  %}
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -32,4 +55,4 @@
     <a class="navbar-brand" href="#">Fixo na parte inferior </a>
   </nav>
  </footer>
-</html>
+</html> {% endcomment %}

@@ -1,0 +1,64 @@
+header.header{
+  height: 6rem;
+  border-bottom: 1px solid #333;
+  background-color: rgb(2, 177, 177);
+}
+
+i#search-btn.fas.fa-search{
+  cursor: pointer;
+}
+.navbar-brand{
+  font-weight: bold;
+}
+.navbar-brand-footer{
+  font-weight: bold;
+  margin-left: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+a.far.fa-trash-alt{
+  color:lightsalmon;
+  text-decoration:none;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a.far.fa-eye{
+  color:lightseagreen;
+  text-decoration:none;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a.far.fa-edit{
+  color:lightskyblue;
+  text-decoration:none;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form#form{
+  font-weight: bold;
+}
+
+input#id_cnpj{
+  margin-left: 10rem;
+}
+input#id_store_name{
+  margin-left: 4.6rem;
+}
+select#id_product_category{
+  margin-left: 5rem;
+}
+select#id_product{
+  margin-left: 15rem;
+}
+footer.footer{
+  height: 4rem;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  border-top: 1px solid #333;
+  background-color: rgb(2, 177, 177);
+}
