@@ -42,3 +42,5 @@ def delete(request, pk):
     db = Stores.objects.get(pk=pk)
     db.delete()
     return redirect('home')     
+
+

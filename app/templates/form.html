@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Form Cadastro empresa{% endblock  %}
+
+{% block content %}
+<body>
+  <div class="col-8 m-auto pt-5 pd-2 text-center">
+  <form name="form" id="form" action="{% if db %}/update/{{db.id}}/{%else%}/create/{% endif %}" method="post">
+  {% csrf_token %}
+  <div class="form-group mt-4 font-weight-bold"> CNPJ {{form.cnpj}}</div>
+  <div class="form-group mt-4">Nome da sua loja {{form.store_name}}</div>
+  <div class="form-group mt-4">Categoria do Produto {{form.product_category}}</div>
+  <div class="form-group mt-4">Produto {{form.product}}</div>
+  <input type="submit" class="btn btn-success mt-4" value="salvar">
+  </form>
+  </div>
+  {% load static %}
+  <script src="{% static 'javascript.js' %}"></script>
+
+{% endblock  %}
+{% comment %} <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
@@ -13,7 +33,7 @@
       <h1>CADASTRO</h1>
       <a href="/" class="navbar-brand">GRUPO BYRON</a>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Encontre uma Loja" aria-label="Search">
         <button class="btn" type="submit">Search</button>
       </form>
     </div>
@@ -38,4 +58,4 @@
     <a class="navbar-brand" href="#">Fixo na parte inferior </a>
   </nav>
  </footer>
-</html>
+</html> {% endcomment %}
