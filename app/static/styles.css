@@ -1,5 +1,6 @@
 header.header{
-  height: 6rem;
+  height: 4.5
+  rem;
   border-bottom: 1px solid #333;
   background-color: rgb(2, 177, 177);
 }
@@ -9,12 +10,6 @@ i#search-btn.fas.fa-search{
 }
 .navbar-brand{
   font-weight: bold;
-}
-.navbar-brand-footer{
-  font-weight: bold;
-  margin-left: 1rem;
-  color: #333;
-  cursor: pointer;
 }
 
 a.far.fa-trash-alt{
@@ -48,11 +43,17 @@ input#id_cnpj{
 input#id_store_name{
   margin-left: 4.6rem;
 }
-select#id_product_category{
-  margin-left: 5rem;
+input#id_product_category{
+  margin-left: 2.8rem;
 }
-select#id_product{
-  margin-left: 15rem;
+input#id_product{
+  margin-left: 9rem;
+}
+.navbar-brand-footer{
+  font-weight: bold;
+  margin-left: 1rem;
+  color: #333;
+  cursor: pointer;
 }
 footer.footer{
   height: 4rem;

@@ -5,7 +5,12 @@ from app.models import Stores
 
 def home(request):
    data = {}
-   data['db'] = Stores.objects.all()
+   search = request.GET.get('search')
+   
+   if search:
+     data['db'] = Stores.objects.filter(store_name__icontains = search)
+   else:
+      data['db'] = Stores.objects.all()
    return render(request, 'index.html', data)
 
 def form(request):

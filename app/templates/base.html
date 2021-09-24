@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title%}{% endblock %}</title>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+  <link rel="stylesheet" href="{% static 'styles.css' %}" >
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/c1cbc6fb25.js" crossorigin="anonymous"></script>
 </head>
@@ -14,10 +14,10 @@
   <nav class="navbar navbar-light ">
     <div class="container-fluid">
       <h1>GRUPO BYRON</h1>
-      <a class="navbar-brand">GRUPO BYRON</a>
-      <form class="d-flex" method="GET" id="search-form">
-        <i class="fas fa-search" id="search-btn"> Encontre uma Loja</i>
-        </form>
+      <a href="/" class="navbar-brand">GRUPO BYRON</a>
+      <form class="form-group" method="GET" id="search">
+        <input type="text" id="search" name="search" class="form-control" placeholder="Encontre uma Loja " >
+      </form>
     </div>
   </nav>
 </Header>
@@ -30,7 +30,7 @@
  </body>
  <footer class="footer">
   <nav class="navbar fixed-bottom navbar-light ">
-    <a class="navbar-brand-footer" href="#">Fixo na parte inferior </a>
+    <a class="navbar-brand-footer" href="https://github.com/future4code/Tania-Oliveira">Desenvolvedoras do projeto </a>
   </nav>
  </footer>
 </html>
